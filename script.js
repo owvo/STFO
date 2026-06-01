@@ -170,7 +170,7 @@ const imageTexts = {
 
     "32.png": `
         <h2>Virulence</h2>
-        <p>Finally, a cool sword. Whoops, looks like that's all the time we have folks.</p>
+        <p>Finally a cool sword... Oh wait, looks like we're all out of time folks!</p>
     `
 }; // <--- Don't forget this closing bracket and semicolon at the very end!
 
