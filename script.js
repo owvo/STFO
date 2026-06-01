@@ -12,18 +12,17 @@ const imageTexts = {
 
     "2.png": `
         <h2>Checkmate</h2>
-        <p>Wow, who could've thought the checkmate sword is just a regular sword mesh lazily slapped on with a checkered texture, it could have been one of the coolest swords in the game holding a rook or something like that, but it looks like someone didn't feel up to the challenge of modeling allat. Figures.</p>
+        <p>Wow, who could've guessed that the checkmate sword is just a regular sword mesh lazily slapped on with a checkered texture, it could have been one of the coolest swords in the game if you were holding a rook or something like that, but it looks like someone didn't feel up to the challenge of modeling allat</p>
     `,
 
     "3.png": `
         <h2>Copy Tool</h2>
-        <p>Really? That's it? Well atleast it's big I guess. Heh, that's what she said. (◕‿◕)╭∩╮</p>
+        <p>Really? That's it? Well atleast it's kinda big I guess... Heh, that's what she said. (◕‿◕)╭∩╮</p>
     `,
 
     "4.png": `
         <h2>CS Resume</h2>
         <p>Somebody was feeling a little self referential when creating this one.</p>
-        <p>You can write as much HTML or plain text here as you want.</p>
     `,
 
     "5.png": `
@@ -33,13 +32,12 @@ const imageTexts = {
 
     "6.png": `
         <h2>Dark Katana</h2>
-        <p>You had infinite possibilities for swords and you seriously choose this?</p>
+        <p>You had infinite possibilities for swords and this is what you went with?</p>
     `,
 
     "7.png": `
         <h2>Duck Sword</h2>
         <p>It's made of ducks. Cool concept, but that's thrown out the window when you realize most people are too zoomed out whilst fighting to even realize that.</p>
-        <p>You can write as much HTML or plain text here as you want.</p>
     `,
 
     "8.png": `
@@ -55,7 +53,6 @@ const imageTexts = {
     "10.png": `
         <h2>Hi-Tekk</h2>
         <p>Why not light source if light source shaped.</p>
-        <p>You can write as much HTML or plain text here as you want.</p>
     `,
 
     "11.png": `
@@ -76,12 +73,12 @@ const imageTexts = {
 
     "14.png": `
         <h2>Jack Frost's Revenge</h2>
-        <p>This text belongs exclusively to the second image.</p>
+        <p>sticky</p>
     `,
 
     "15.png": `
         <h2>Keyboard</h2>
-        <p>Custom description for image 3 goes here.</p>
+        <p>qwertyuiopasdfghjklzxcvbnm</p>
     `,
 
     "16.png": `
@@ -113,7 +110,6 @@ const imageTexts = {
     "21.png": `
         <h2>Ping-Pong Sword</h2>
         <p>Peak animation paired with a mid sword model, but what did you expect?</p>
-        <p>You can write as much HTML or plain text here as you want.</p>
     `,
 
     "22.png": `
