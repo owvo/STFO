@@ -1,0 +1,70 @@
+:root {
+    --gallery-gap: 25px; 
+    --img-size: 250px;
+}
+
+* { box-sizing: border-box; }
+
+body, html {
+    margin: 0; padding: 0; background-color: #252626;
+    width: 100%; height: 100vh; overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.gallery-container { display: flex; flex-direction: column; padding-top: var(--gallery-gap); width: 100%; }
+.row { width: 100%; overflow: hidden; white-space: nowrap; margin-bottom: var(--gallery-gap); display: flex; }
+.track { display: flex; width: max-content; }
+
+.track img {
+    width: var(--img-size); height: var(--img-size);
+    margin-right: var(--gallery-gap); cursor: pointer;
+    user-select: none; object-fit: cover; border-radius: 4px; display: block;
+}
+
+.row-ltr .track { animation: scroll-ltr 25s linear infinite; }
+.row-rtl .track { animation: scroll-rtl 25s linear infinite; }
+
+@keyframes scroll-ltr { 0% { transform: translateX(-50%); } 100% { transform: translateX(0%); } }
+@keyframes scroll-rtl { 0% { transform: translateX(0%); } 100% { transform: translateX(-50%); } }
+
+body.modal-open .track { animation-play-state: paused; }
+
+.overlay {
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    background-color: #252626; z-index: 1000; display: none;
+    opacity: 0; transition: opacity 0.5s ease-in-out;
+}
+.overlay.active { display: block; opacity: 1; }
+
+.animated-img {
+    position: fixed; object-fit: cover;
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 1001; pointer-events: none;
+}
+
+.text-side {
+    position: fixed; right: 0; top: 0; width: 50vw; height: 100vh;
+    padding: 60px; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; opacity: 0;
+    transform: translateX(60px); transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
+    z-index: 1001;
+}
+
+.overlay.open .text-side { opacity: 1; transform: translateX(0); }
+
+/* Updated Content Display Area */
+#contentDisplay {
+    width: 100%; height: 70%; background: #1c1d1d;
+    border: 1px solid #3e4040; color: #ffffff;
+    padding: 25px; border-radius: 12px; overflow-y: auto;
+}
+
+#contentDisplay h2 { margin-top: 0; color: #ffffff; }
+#contentDisplay p { line-height: 1.6; color: #cccccc; }
+
+.close-btn {
+    position: fixed; top: 30px; right: 40px; font-size: 40px;
+    color: #ffffff; cursor: pointer; z-index: 1002;
+    opacity: 0.6; transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.close-btn:hover { opacity: 1; transform: scale(1.1); }
